@@ -21,7 +21,7 @@ public class MainActivity extends Activity implements View.OnTouchListener {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        soundPoolHelper = new SoundPoolHelper(3, this);
+        soundPoolHelper = new SoundPoolHelper(10, this);
 
         setVolumeControlStream(AudioManager.STREAM_MUSIC);
 

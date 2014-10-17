@@ -8,39 +8,47 @@
     android:paddingBottom="@dimen/activity_vertical_margin"
     tools:context=".MainActivity">
 
-    <TextView
-        android:text="Here is the Drum Pad!"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:id="@+id/textView" />
 
-    <Button
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Snare Drum"
-        android:id="@+id/snareDrumButton"
-        android:layout_toEndOf="@+id/textView"
-        android:layout_below="@+id/textView"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="116dp" />
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true">
 
-    <Button
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Hi Hat"
-        android:id="@+id/hiHatButton"
-        android:layout_toEndOf="@+id/textView"
-        android:layout_centerVertical="true"
-        android:layout_centerHorizontal="true" />
 
-    <Button
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Bass Drum"
-        android:id="@+id/bassDrumButton"
-        android:layout_below="@+id/hiHatButton"
-        android:layout_toRightOf="@+id/textView"
-        android:layout_toEndOf="@+id/textView"
-        android:layout_marginTop="46dp" />
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Snare Drum"
+            android:id="@+id/snareDrumButton"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:height="480dp"
+            android:width="192dp" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Hi Hat"
+            android:id="@+id/hiHatButton"
+            android:layout_centerVertical="true"
+            android:layout_centerHorizontal="true"
+            android:width="192dp"
+            android:height="480dp" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Bass Drum"
+            android:id="@+id/bassDrumButton"
+            android:layout_below="@+id/hiHatButton"
+            android:layout_alignLeft="@+id/hiHatButton"
+            android:layout_alignStart="@+id/hiHatButton"
+            android:width="192dp"
+            android:height="480dp" />
+
+        </LinearLayout>
 
 </RelativeLayout>
